@@ -18,7 +18,7 @@
     "commands": [
       {
         "command": "ck4-test-mate.openTest",
-        "title": "Open test in your browser"
+        "title": "Open CKE4 test in browser"
       }
     ],
     "keybindings": [
