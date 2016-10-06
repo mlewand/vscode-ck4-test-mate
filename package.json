@@ -20,6 +20,13 @@
         "command": "ck4-test-mate.openTest",
         "title": "Open test in your browser"
       }
+    ],
+    "keybindings": [
+      {
+        "command": "ck4-test-mate.openTest",
+        "key": "ctrl+shift+alt+u",
+        "when": "editorTextFocus"
+      }
     ]
   },
   "scripts": {
