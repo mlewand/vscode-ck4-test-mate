@@ -27,7 +27,28 @@
         "key": "ctrl+shift+alt+u",
         "when": "editorTextFocus"
       }
-    ]
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "CKEditor 4 test mate configuration",
+      "properties": {
+        "ck4-test-mate.domain": {
+          "type": "string",
+          "default": "tests.ckeditor.test",
+          "description": "Domain/address where the test server is running."
+        },
+        "ck4-test-mate.protocol": {
+          "type": "string",
+          "default": "http",
+          "description": "Protocol used by the test server."
+        },
+        "ck4-test-mate.port": {
+          "type": "number",
+          "default": 1030,
+          "description": "Port number used by the server."
+        }
+      }
+    }
   },
   "repository": {
     "type": "git",

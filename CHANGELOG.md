@@ -4,7 +4,7 @@
 
 ### Added
 
-
+- [#1](https://github.com/mlewand/vscode-ck4-test-mate/issues/1) Added `ck4-test-mate.protocol`, `ck4-test-mate.domain` and `ck4-test-mate.port` configuration variables for changing tests address.
 
 ### Changed
 
