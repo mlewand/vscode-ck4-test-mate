@@ -7,3 +7,5 @@
 
 
 ### Changed
+
+- Dev deps updated.
