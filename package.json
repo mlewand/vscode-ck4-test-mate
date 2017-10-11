@@ -1,50 +1,51 @@
 {
-    "name": "ck4-test-mate",
-    "displayName": "CKEditor 4 test mate",
-    "description": "A set of helpers for CKEditor 4 test development.",
-    "version": "0.1.0",
-    "publisher": "mlewand",
-    "engines": {
-        "vscode": "^1.5.0"
-    },
-    "categories": [
-        "Other"
+  "name": "ck4-test-mate",
+  "displayName": "CKEditor 4 test mate",
+  "description": "A set of helpers for CKEditor 4 test development.",
+  "version": "0.1.0",
+  "publisher": "mlewand",
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:ck4-test-mate.openTest"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ck4-test-mate.openTest",
+        "title": "Open CKE4 test in browser"
+      }
     ],
-    "activationEvents": [
-        "onCommand:ck4-test-mate.openTest"
-    ],
-    "main": "./extension",
-    "contributes": {
-        "commands": [
-            {
-                "command": "ck4-test-mate.openTest",
-                "title": "Open CKE4 test in browser"
-            }
-        ],
-        "keybindings": [
-            {
-                "command": "ck4-test-mate.openTest",
-                "key": "ctrl+shift+alt+u",
-                "when": "editorTextFocus"
-            }
-        ]
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/mlewand/vscode-ck4-test-mate"
-    },
-    "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install"
-    },
-    "devDependencies": {
-        "typescript": "^2.0.3",
-        "vscode": "^1.0.0",
-        "mocha": "^2.3.3",
-        "eslint": "^3.6.0",
-        "@types/node": "^6.0.40",
-        "@types/mocha": "^2.2.32"
-    },
-    "dependencies": {
-        "opn": "^4.0.2"
-    }
+    "keybindings": [
+      {
+        "command": "ck4-test-mate.openTest",
+        "key": "ctrl+shift+alt+u",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mlewand/vscode-ck4-test-mate"
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.32",
+    "@types/node": "^6.0.40",
+    "chai": "^3.5.0",
+    "eslint": "^3.6.0",
+    "mocha": "^2.3.3",
+    "typescript": "^2.0.3",
+    "vscode": "^1.0.0"
+  },
+  "dependencies": {
+    "opn": "^4.0.2"
+  }
 }
